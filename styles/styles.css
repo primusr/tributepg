@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+#main {
+    margin: 20px 8px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+body {
+    font-family: "Lato", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: 0;
+    background-color: black;
+    color: whitesmoke;
+}
+
+@media (min-width: 1400px) {
+    body {
+        font-size: 2rem;
+        line-height: 1.8;
+    }
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+#subheader {
+    font-weight: 500;
+    font-size: 3rem;
+    color: #f78da7;
+    text-align: center;
+}
+
+#img-caption {
+    margin: 15px 0 5px 0;
+    padding: 0 80px;
+    border: 10px;
+    text-align: center;
+    font-size:1.8rem;
+}
+
+@media (max-width: 400px) {
+    #img-caption {
+        font-size: 1.8rem;
+    }
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: "Libre Baskerville", serif;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+@media (min-width: 1400px) {
+    h2 {
+        font-size: 4rem;
+    }
+}
+
+b {
+    color: #f78da7;
+}
+
+blockquote {
+    font-size: 2rem;
+    font-style: italic;
+    font-family: "Libre Baskerville", serif;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 1400px) {
+    blockquote {
+        font-size: 3rem;
+    }
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+    color: #f78da7;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+a:visited {
+    color: rgb(238,44,130);
+}
+
+#tribute-link {
+    font-weight: 500;
+    color: #fefefe;
+    text-transform: uppercase;
+    line-height: 2;
+}
+
+#tribute-link:visited {
+    color: #fefefe;
+}
+
+#tribute-link:hover {
+    text-decoration: none;
+}
+
+#tribute-link-dash {
+    text-decoration: none;
+}
+
+#tribute-link:hover #tribute-link-dash {
+    animation-name: tribute-link-dash-move;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tribute-link-dash-move {
+    0% {
+        border-bottom: 0.4rem solid rgba(254, 254, 254, 0);
+        padding-bottom: 0.6rem;
+    }
+
+    100% {
+        border-bottom: 0.4rem solid rgba(254, 254, 254, 1);
+        padding-bottom: 0.6rem;
+    }
+}
+
+/* Images */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+img#image {
+    width: 80%;
+    height: auto;
+    border: 1px solid #f78da7;
+    box-shadow: 0 0 20px rgba(247, 141, 167, 0.7);
+}
+
+img.project-image {
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 10px rgba(247, 141, 167, 0.7);
+}
+
+#img-div {
+    padding: 30px;
+    margin: 0;
+}
+
+.members img {
+    max-width:100%;
+    height: auto;
+}
+
+/* Albums */
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 3rem;
+    margin: 0 auto;
+}
+
+@media (max-width: 400px) {
+    .album-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.img-container {
+    position: relative;
+}
+
+.caption {
+    padding-top: 1.2rem;
+    font-family: "Libre Baskerville", serif;
+    text-align: center;
+}
+
+.date-caption {
+    font-size: 1rem;
+    font-style: italic;
+    position: relative;
+    top: -1rem;
+}
+
+.name-caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.stage-name-caption {
+    font-size: 2rem;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.fullname-caption {
+    font-size: 1.8rem;
+    font-style: italic;
+    position: relative;
+    top: -1rem;
+}
+
+@media (min-width: 1400px) {
+    .date-caption {
+        font-size: 1.5rem;
+    }
+
+    .name-caption {
+        font-size: 2rem;
+    }
+}
+
+.members > div {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Sections */
+
+.header {
+    padding: 0rem 4rem 3rem 4rem;
+}
+
+.first-row {
+    padding: 0 5rem 4rem 5rem;
+    margin-bottom: 5rem;
+}
+
+#first-row-container {
+    margin: auto;
+    padding: 0rem 6rem 3rem;
+}
+
+.members {
+    background-color: #f78da7;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.second-row {
+    background-color: #f78da7;
+    color: black;
+    padding: 3rem;
+    text-align: center;
+}
+
+.third-row {
+    padding: 3rem 4rem 1rem 4rem;
+    margin-top: 4rem;
+}
+
+.fourth-row {
+    padding: 3rem 4rem 1rem 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    background-color: #f78da7;
+    color: black;
+    padding: 0.2rem;
+    text-align: center;
+}
